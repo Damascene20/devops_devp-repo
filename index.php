@@ -7,7 +7,8 @@ $conn=mysqli_connect("mysql-btech","root","","schooldb")or die(mysqli_connect_er
 $sql="DELETE FROM students WHERE id=$user";
 $query=mysqli_query($conn,$sql);
 header("location:index.php");
-}  ?>
+}  
+?>
 <html> <heard><title> Delete</title></head>
 <body>
 	<p style="color: red">Are you sure to delete ?</p>
